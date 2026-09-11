@@ -16,7 +16,7 @@ WITHOUT WARRANTIES OR REPRESENTATIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED.
 // Statements that include other files
 //
 #include "AcpiTablePlatform.h"
-#include <PsdLib.h>
+#include <Library/PsdLib.h>
 
 //PSD Table
 EFI_ACPI_PSD_TABLE PsdTable = {
