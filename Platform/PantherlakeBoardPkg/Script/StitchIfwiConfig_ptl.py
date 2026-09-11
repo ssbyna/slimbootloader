@@ -1,5 +1,5 @@
 ## @ StitchIfwiConfig_ptl.py
-#  This is an IFWI stitch config script for PTL/PTL-A Slim Bootloader
+#  This is an IFWI stitch config script for PTL Slim Bootloader
 #
 # Copyright (c) 2026, Intel Corporation. All rights reserved. <BR>
 # SPDX-License-Identifier: BSD-2-Clause-Patent
@@ -102,7 +102,7 @@ def get_bpmgen2_params_change_list ():
 
 def get_platform_sku():
     platform_sku ={
-        'ptl'    :   'Intel(R) PantherLake H Chipset - Corporate - SPI'
+        'ptl'    :   'Intel(R) PantherLake H Chipset - Consumer - SPI'
     }
     return platform_sku
 
@@ -198,7 +198,6 @@ def get_xml_change_list (platform, plt_params_list):
       #Region Order
         ('./FlashLayout/BiosRegion/InputFile',                                       '$SourceDir\BiosRegion.bin'),
         ('./FlashLayout/DescriptorRegion/OemBinary',                                 '$SourceDir\OemBinary.bin'),
-        ('./FlashLayout/Ifwi_IntelMePmcRegion/MeRegionFile',                         '$SourceDir\MeRegionFileCorp.bin'),
         ('./FlashLayout/Ifwi_IntelMePmcRegion/PmcBinary',                            '$SourceDir\PmcBinary.bin'),
         ('./FlashLayout/EcRegion/InputFile',                                         '$SourceDir\EcRegion.bin'),
         ('./FlashLayout/EcRegion/Enabled',                                           'Enabled'),
